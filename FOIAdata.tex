@@ -32,14 +32,14 @@
 {}
 
 \author[Christensen] % (optional, use only with lots of authors)
-{Garret~Christensen\inst{1}}
+{Garret~Christensen} %\inst{1}}
 % - Give the names in the same order as the appear in the paper.
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 
 \institute[Universities of Somewhere and Elsewhere] % (optional, but mostly needed)
 {
-  \inst{1}%
+  %\inst{1}%
   UC Berkeley:\\
   Berkeley Initiative for Transparency in the Social Sciences\\
   Berkeley Institute for Data Science\\
@@ -199,7 +199,7 @@ Freedom of Information Act (1967)
     \begin{frame}[plain]
         \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-                \href{https://www.bitss.org/}{\includegraphics[height=3in, angle=270]{./Images/IMG_envelopes.jpg}}
+              \includegraphics[height=3in, angle=270]{./Images/IMG_envelopes.jpg}
             };
         \end{tikzpicture}
      \end{frame}
@@ -224,7 +224,28 @@ Freedom of Information Act (1967)
     \begin{frame}[plain]
         \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-                \href{https://www.bitss.org/}{\includegraphics[height=\paperheight]{./Images/IMG_CD.jpg}}
+             \includegraphics[height=\paperheight]{./Images/IMG_CD.jpg}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+                \href{https://dataverse.harvard.edu/dataverse/garretchristensen}{\includegraphics[width=\paperwidth]{./Images/Dataverse.png}}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
+\section{Results}
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+              \includegraphics[height=\paperheight]{./Images/graph_deathsvsrecruits_basic.png}
             };
         \end{tikzpicture}
      \end{frame}
@@ -235,7 +256,17 @@ Freedom of Information Act (1967)
     \begin{frame}[plain]
         \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-                \href{https://www.bitss.org/}{\includegraphics[height=\paperheight]{./Images/graph_deathsvsrecruits_basic.png}}
+               \includegraphics[width=\paperwidth]{./Images/recruits_rstudio.png}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+              \includegraphics[width=\paperwidth]{./Images/deaths_rstudio.png}
             };
         \end{tikzpicture}
      \end{frame}
@@ -246,28 +277,7 @@ Freedom of Information Act (1967)
     \begin{frame}[plain]
         \begin{tikzpicture}[remember picture,overlay]
             \node[at=(current page.center)] {
-                \href{https://www.bitss.org/}{\includegraphics[width=\paperwidth]{./Images/recruits_rstudio.png}}
-            };
-        \end{tikzpicture}
-     \end{frame}
-}
-{ % all template changes are local to this group.
-    \setbeamertemplate{navigation symbols}{}
-    \begin{frame}[plain]
-        \begin{tikzpicture}[remember picture,overlay]
-            \node[at=(current page.center)] {
-                \href{https://www.bitss.org/}{\includegraphics[width=\paperwidth]{./Images/deaths_rstudio.png}}
-            };
-        \end{tikzpicture}
-     \end{frame}
-}
-
-{ % all template changes are local to this group.
-    \setbeamertemplate{navigation symbols}{}
-    \begin{frame}[plain]
-        \begin{tikzpicture}[remember picture,overlay]
-            \node[at=(current page.center)] {
-                \href{https://www.bitss.org/}{\includegraphics[height=\paperheight]{./Images/JEBOscreenshot.png}}
+              \includegraphics[height=\paperheight]{./Images/JEBOscreenshot.png}
             };
         \end{tikzpicture}
      \end{frame}
